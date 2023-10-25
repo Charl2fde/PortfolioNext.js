@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../components/nav'
 import Footer from '../components/footer'
+import { Container } from '@chakra-ui/react'
 
 export default function Home() {
   return (
@@ -11,18 +12,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Navbar/>
-        <section className="mid">
-                <div>
-                    <p>Bienvenue sur le Portfolio de <br/><span className="c2fde">Charles de Feligonde</span></p>
-                </div>
-                <div>
-                    <a href="profil.html"><button className="transparent-button">En savoir plus</button></a>
-                </div>
-            </section>
-      </main>
-      <Footer/>
+      <div className="container">
+        <main>
+          <Navbar />
+          <section className="mid">
+            <div>
+              <p>Bienvenue sur le Portfolio de <br /><span className="c2fde">Charles de Feligonde</span></p>
+            </div>
+          </section>
+        </main>
+        <Footer />
+      </div>
     </>
   )
 }
