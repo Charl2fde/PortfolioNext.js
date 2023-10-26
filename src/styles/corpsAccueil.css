@@ -1,4 +1,13 @@
 /* body */
+@font-face {
+    font-family: 'signature';
+    src: url(../font/Signature.otf);
+}
+
+@font-face {
+    font-family: 'poppinss';
+    src: url(../font/Poppins/Poppins-Light.ttf);
+}
 
 .container {
     background: url(../images/informatique.jpg);
@@ -6,6 +15,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
+    font-family: 'poppinss';
 }
 
 .mid {
